@@ -1,12 +1,10 @@
 package io.github.julianjupiter.springbootandreactjs.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
+@Table(uniqueConstraints=@UniqueConstraint(columnNames="name"))
 public class Hero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
