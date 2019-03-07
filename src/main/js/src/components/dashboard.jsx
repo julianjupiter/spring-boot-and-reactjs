@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import HeroSearch from "./heroSearch";
 import axios from "axios";
-import "./dashboard.css";
 
 class Dashboard extends Component {
   state = {
@@ -14,7 +13,6 @@ class Dashboard extends Component {
       .get("http://localhost:8090/api/heroes")
       .then(response => this.setState({ heroes: response.data }))
       .catch(error => console.log(error));
-    console.log(this.state.heroes);
   }
 
   render() {

@@ -68,11 +68,11 @@ class HeroDetail extends Component {
               </div>
               <button
                 onClick={this.handleGoBack}
-                className="btn btn-outline-primary mr-2 rounded-0"
+                className="btn btn-outline-primary mr-2"
               >
-                go back
+                Go Back
               </button>
-              <button className="btn btn-primary rounded-0">save</button>
+              <button className="btn btn-primary">Save</button>
             </form>
           </div>
         </div>

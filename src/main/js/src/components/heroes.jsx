@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import "./heroes.css";
 
 class Heroes extends Component {
   state = {
@@ -70,7 +69,7 @@ class Heroes extends Component {
                   placeholder="New hero..."
                 />
               </div>
-              <button className="btn btn-primary rounded-0">add</button>
+              <button className="btn btn-primary">Add</button>
             </div>
           </form>
         </div>
