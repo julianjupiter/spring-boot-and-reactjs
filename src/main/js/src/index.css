@@ -1,14 +1,113 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./Ubuntu-Regular.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+/*dashboard*/
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:hover .hero h4 {
+  color: #007bff !important;
+}
+
+.hero {
+  max-height: 120px;
+  min-width: 120px;
+}
+
+.hero:hover {
+  background-color: #f8f9fa !important;
+}
+
+.hero h4 {
+  color: #eee;
+}
+
+/* Heroes */
+.heroes {
+  list-style-type: none;
+}
+
+.heroes li {
+  cursor: pointer;
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 2.4rem;
+  border-radius: 4px;
+}
+
+.heroes li:hover {
+  left: 0.1em;
+}
+
+.heroes a {
+  text-decoration: none;
+  width: 250px;
+}
+
+.heroes a:hover {
+  color: #007bff;
+}
+
+.heroes .badge {
+  font-size: small;
+  padding: 0.8em 0.7em 0 0.7em;
+  line-height: 1em;
+  left: -1px;
+  top: -5px;
+  height: 2.4rem;
+  min-width: 16px;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.heroes button.delete {
+  top: -39px;
+  height: 1.8rem;
+  line-height: 0.5;
+}
+
+/* HeroSearch */
+#search-box {
+  border-color: #007bff !important;
+}
+
+.search-result li {
+  border-left: 1px solid #007bff !important;
+  border-right: 1px solid #007bff !important;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.search-result li:last-child {
+  border-bottom: 1px solid #007bff !important;
+}
+
+.search-result li:hover {
+  background-color: #007bff !important;
+}
+
+.search-result li a {
+  display: block;
+  text-decoration: none;
+}
+
+.search-result li a:hover,
+.search-result li a:active {
+  color: white !important;
+}
+
+/**/
+.navbar-nav .nav-item.active a {
+  color: #000000 !important;
 }

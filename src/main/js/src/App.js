@@ -4,6 +4,7 @@ import NavBar from "./components/navbar";
 import Dashboard from "./components/dashboard";
 import Heroes from "./components/heroes";
 import HeroDetail from "./components/heroDetail";
+import NoMatch from "./components/noMatch";
 import "./App.css";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/heroes" component={Heroes} exact />
             <Route path="/heroes/:id" component={HeroDetail} />
+            <Route component={NoMatch} />
           </Switch>
         </main>
       </React.Fragment>
