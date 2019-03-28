@@ -27,11 +27,10 @@ import javax.validation.Valid;
 @RequestMapping("/api/heroes")
 @CrossOrigin(origins = { "http://localhost:8090", "http://localhost:3000" }, maxAge = 3000)
 public class HeroController {
-    private HeroService heroService;
+    private final HeroService heroService;
     @Autowired
     private MessageSource messageSource;
 
-    @Autowired
     public HeroController(HeroService heroService) {
         this.heroService = heroService;
     }
