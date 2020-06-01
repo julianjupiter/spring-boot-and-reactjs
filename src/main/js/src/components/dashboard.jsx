@@ -16,7 +16,6 @@ class Dashboard extends Component {
   }
 
   render() {
-    console.log(this.state.heroes);
     return (
       <React.Fragment>
         <div className="row">

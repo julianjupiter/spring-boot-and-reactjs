@@ -35,7 +35,6 @@ class Heroes extends Component {
   };
 
   handleDelete = heroId => {
-    console.log("delete");
     axios
       .delete(`http://localhost:8090/api/heroes/${heroId}`)
       .then(response => {
